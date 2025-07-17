@@ -17,7 +17,7 @@ const Hero = () => {
         <div className='h-[20%] w-full flex justify-center items-start  gap-3 font-serif'> <button className='gradient-btn1 px-3 py-2 bg-purple-400 rounded-full ' >exlore courses</button> <button className='gradient-btn px-3 py-2 rounded-full bg-white'>enroll now</button></div>
        </div>
        </div>
-       <button className='fixed bottom-3 right-3 text-[50px] z-30 text-[#66ff6b]'><IoLogoWhatsapp/></button>
+     <a href="https://wa.me/9963647799">  <button className='fixed bottom-3 right-3 text-[50px] z-30 text-[#66ff6b]'><IoLogoWhatsapp/></button></a>
     </div>
   )
 }

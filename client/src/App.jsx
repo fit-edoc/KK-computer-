@@ -12,6 +12,7 @@ import AboutSection from './pages/AboutSection'
 import Insructor from './pages/Insructor'
 import Popular from './pages/Popular'
 import Footer from './pages/Footer'
+import CoursesSection from './pages/CoursesSection'
 
 function App() {
     const heroRef = useRef(null);
@@ -21,6 +22,7 @@ function App() {
   const featuresRef = useRef(null);
   const instructorsRef = useRef(null);
   const coursesRef = useRef(null);
+  const showRef = useRef(null)
 
   
   const scrollToSection = (ref) => {
@@ -36,7 +38,8 @@ function App() {
         partners: partnersRef,
         features: featuresRef,
         instructors: instructorsRef,
-        courses: coursesRef
+        courses: coursesRef,
+        showCourse:showRef
       }} />
       
       <div ref={heroRef}>
@@ -54,6 +57,7 @@ function App() {
       <div ref={partnersRef}>
         <Parteners />
       </div>
+      <div ref={showRef}><CoursesSection/></div>
       
       <div ref={featuresRef}>
         <Card />
