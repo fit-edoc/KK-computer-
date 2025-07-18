@@ -2,6 +2,8 @@ import React from "react";
 
 const CoursesSection = () => {
   return (
+    <>
+     <div className="h-[100px] w-screen bg-gradient-to-r from-[#000000] via-[#46154d] to-[#000] text-center text-white text-[25px] py-8  font-bold"><h1 className="border-b-2 border-yellow-200 inline ">Skill Developement Courses</h1></div>
     <div className="bg-gradient-to-r from-black via-[#46154d] to-black min-h-screen overflow-x-hidden font-sans">
       <div className="flex flex-col lg:flex-row p-4 lg:p-8">
         {/* Left Column - Images */}
@@ -11,21 +13,21 @@ const CoursesSection = () => {
               src="images/courseshow/1.jpg" 
               alt="Course 1" 
               className="w-48 h-auto"
-            />
+              />
           </div>
           <div className="relative lg:top-28 lg:left-40">
             <img 
               src="images/courseshow/2.jpg" 
               alt="Course 2" 
               className="w-48 h-auto"
-            />
+              />
           </div>
           <div className="relative lg:top-40 lg:left-40">
             <img 
               src="images/courseshow/4.jpg" 
               alt="Course 3" 
               className="w-48 h-auto"
-            />
+              />
           </div>
         </div>
 
@@ -33,10 +35,10 @@ const CoursesSection = () => {
         <div className="lg:w-1/3 mt-8 lg:mt-0">
           <div className="relative lg:top-16 lg:right-24.2">
             <img 
-              src="images/courseshow/3.jpg" 
+              src="./images/courseshow/3.jpg" 
               alt="Main Course" 
               className="w-[50vw] h-auto"
-            />
+              />
           </div>
           <p className="relative lg:top-44 lg:left-36 font-medium text-gray-100 mt-4 lg:mt-0">
             Explore all courses
@@ -45,7 +47,7 @@ const CoursesSection = () => {
             <a 
               href="#" 
               className="text-white font-semibold no-underline inline-block mt-2"
-            >
+              >
               LEARN MORE
             </a>
           </div>
@@ -90,6 +92,7 @@ const CoursesSection = () => {
         </div>
       </div>
     </div>
+              </>
   );
 };
 

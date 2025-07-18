@@ -13,6 +13,7 @@ import Insructor from './pages/Insructor'
 import Popular from './pages/Popular'
 import Footer from './pages/Footer'
 import CoursesSection from './pages/CoursesSection'
+import ContactPage from './pages/ContactPage'
 
 function App() {
     const heroRef = useRef(null);
@@ -23,6 +24,7 @@ function App() {
   const instructorsRef = useRef(null);
   const coursesRef = useRef(null);
   const showRef = useRef(null)
+  const contactRef = useRef(null)
 
   
   const scrollToSection = (ref) => {
@@ -30,7 +32,12 @@ function App() {
   };
 
   return (
+
+
+
     <>
+
+
       <Nav scrollToSection={scrollToSection} sectionRefs={{
         hero: heroRef,
         services: cardGridRef,
@@ -39,11 +46,15 @@ function App() {
         features: featuresRef,
         instructors: instructorsRef,
         courses: coursesRef,
-        showCourse:showRef
+        showCourse:showRef,
+        contact :contactRef
       }} />
       
       <div ref={heroRef}>
-        <Hero />
+        <Hero scrollToSection={scrollToSection} sectionRefs={{
+          hero: heroRef,
+          courses: coursesRef,
+        }} />
       </div>
       
       <div ref={cardGridRef}>
@@ -70,7 +81,7 @@ function App() {
       <div ref={coursesRef}>
         <Popular />
       </div>
-      
+      <div ref={contactRef}><ContactPage/></div>
       <Footer />
     </>
   );

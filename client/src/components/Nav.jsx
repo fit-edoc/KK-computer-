@@ -25,8 +25,18 @@ const Nav = ({scrollToSection, sectionRefs }) => {
           >
             Courses
           </button>
-  <li>Skill Development Course</li>
-  <li>Contact</li>
+  <button 
+            onClick={() => scrollToSection(sectionRefs.showCourse)} 
+            className="hover:text-purple-200 transition"
+          >
+            Skill Developement Courses
+          </button>
+   <button 
+            onClick={() => scrollToSection(sectionRefs.contact)} 
+            className="hover:text-purple-200 transition"
+          >
+            Contact
+          </button>
       </div>
       <div className='h-full w-[20%]  flex items-center justify-evenly px-5'>
           <button className='px-3 py-1 bg-[#dcd39e] hover:bg-yellow-400 text-black rounded-full border-1 border-white'>Login</button>
