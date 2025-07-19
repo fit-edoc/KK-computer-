@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub } from "react-icons/fa";
 
 
 const Nav = ({scrollToSection, sectionRefs }) => {
@@ -39,7 +40,7 @@ const Nav = ({scrollToSection, sectionRefs }) => {
           </button>
       </div>
       <div className='h-full w-[20%]  flex items-center justify-evenly px-5'>
-          <button className='px-3 py-1 bg-[#dcd39e] hover:bg-yellow-400 text-black rounded-full border-1 border-white'>Login</button>
+         <a href="https://github.com/fit-edoc/KK-computer-"> <button className='px-3 py-3 text-[25px] bg-[#dcd39e] hover:bg-yellow-400 text-black rounded-full border-1 border-white'><FaGithub/></button></a>
 
        <a href="https://docs.google.com/forms/d/1vvABdxAMXTsMao7LRwb-cxZ6wueevJ48UwCDQbdMSeQ/edit"> <button className='px-4 py-2  bg-[#de71ff] text-black rounded-full hover:bg-purple-500 transition-all capitalize'>Join now</button></a>
       </div>
